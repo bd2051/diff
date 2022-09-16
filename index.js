@@ -54,11 +54,13 @@
     DiffEdit.super_.call(this, 'E', path);
     Object.defineProperty(this, 'lhs', {
       value: origin,
-      enumerable: true
+      enumerable: true,
+      configurable: true
     });
     Object.defineProperty(this, 'rhs', {
       value: value,
-      enumerable: true
+      enumerable: true,
+      configurable: true
     });
   }
   inherits(DiffEdit, Diff);
