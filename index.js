@@ -44,7 +44,8 @@
     if (path && path.length) {
       Object.defineProperty(this, 'path', {
         value: path,
-        enumerable: true
+        enumerable: true,
+        configurable: true
       });
     }
   }
